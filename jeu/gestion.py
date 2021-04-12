@@ -1,5 +1,5 @@
 import pygame
-import self as self
+
 from pygame.math import Vector2
 
 import core

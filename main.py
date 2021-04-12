@@ -1,8 +1,6 @@
-import time
+
 
 import pygame
-from pygame.math import Vector2
-
 import core
 from jeu.fleche import Fleches
 from jeu.gestion import Gestion
@@ -18,7 +16,7 @@ police = pygame.font.SysFont('Arial', 50)
 text = 'You Lose'
 texte = police.render(text, True, (255, 0, 0))
 
-def setup ():
+def setup():
     print("Setup START---------")
     core.fps = 50
     core.WINDOW_SIZE = [900, 1000]
@@ -26,11 +24,11 @@ def setup ():
         drops.append(fleches)
     print("Setup END-----------")
 
-def run ():
+def run():
     gestion.afficher(core)
     show()
     update()
-    print(drops)
+
 
 
 def update():
